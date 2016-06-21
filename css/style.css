@@ -11,7 +11,6 @@ a {
 }
 
 nav {
-  /*background-color: rgba(255,255,255,0.1);*/
   background-color: transparent;
   position: absolute;
   top:0;
@@ -26,6 +25,11 @@ nav {
 
 .brand-logo {
   margin-left: 20px;
+}
+
+.side-nav {
+  background-color: white;
+  z-index: -99;
 }
 
 .header-container {
@@ -70,6 +74,10 @@ nav {
 
 footer.page-footer {
   margin-top: 0;
+}
+
+footer .row {
+  margin-bottom: 5px;
 }
 
 .icon-container {
@@ -232,6 +240,16 @@ footer.page-footer {
     font-size: 3.8rem;
   }
 
+  .first-container {
+    margin-top: 15%;
+    margin-bottom: 30px;
+  }
+
+  .parallax-break {
+    height: 175px;
+    line-height: 175px;
+  }
+
   .grid {
     top: -130px;                  /*    CHANGE WITH HEADER-CONTAINER HEIGHT: */
     left: 20%;
@@ -241,7 +259,29 @@ footer.page-footer {
 }
 
 @media screen and (max-width: 600px) {
-  .footer-copyright {
-    text-align: center;
+  .header-container {
+    height: 250px;
+  }
+
+  .header-text {
+    line-height: 250px;
+    font-size: 2.8rem;
+  }
+
+  .first-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .parallax-break {
+    height: 125px;
+    line-height: 125px;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .header-text {
+    margin-top: 100px;
+    line-height: 1em;
   }
 }
