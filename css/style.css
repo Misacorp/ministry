@@ -1,3 +1,147 @@
 .hoverable {
   cursor: pointer;
 }
+
+.parallax-image {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-container {
+  height: 500px;
+}
+
+.parallax-container {
+  text-align: center;
+}
+
+.parallax-break {
+  height: 300px;
+  line-height: 300px;
+  font-style: italic;
+}
+
+.header-text {
+  line-height: 400px;
+  font-size: 5rem;
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+}
+
+.centered {
+  min-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.first-container {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*    DIAMOND GRID CSS    */
+
+
+.grid-container {
+  position: relative;
+}
+
+.grid {
+  position: absolute;
+  top: -190px;                  /*    CHANGE WITH HEADER-CONTAINER HEIGHT: */
+  left: 15%;
+  right: 15%;
+  width: 70%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.grid::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  position: relative;
+  width: 21.833%;
+  padding-bottom: 21.833%;
+  overflow: hidden;
+  float: left;
+  transform: rotate(45deg);
+  margin: 5.5%;
+  margin-top: -11%;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5)
+}
+
+.grid-item:before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.grid-item:nth-child(1),
+.grid-item:nth-child(2),
+.grid-item:nth-child(3) {
+  margin-top: 5%;
+}
+
+.grid-item:nth-child(5n+4) {
+  margin-left: 21.9%;
+}
+
+.grid-item:nth-child(5n+6) {
+  clear:left;
+}
+
+.grid-item:nth-child(5n+6):last-of-type {
+  margin-left: 38.25%;
+}
+
+.grid-inner {
+  box-sizing: border-box;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-45deg);
+  text-align: center;
+  padding-top: 40%;
+  font-size: 2em;
+  overflow: hidden;
+}
+
+.grid-image {
+    position: absolute;
+    width: 255%;
+    height: auto;
+    left: -70%;
+    top: -75%;
+}
+
+/*    GRID CONTENT     */
+
+
+/*    END DIAMOND GRID CSS     */
