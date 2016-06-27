@@ -17,6 +17,7 @@ nav {
   left:0;
   z-index: 1;
   box-shadow: none;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.4);
 }
 
 .navbar-links {
@@ -27,15 +28,31 @@ nav {
   margin-left: 20px;
 }
 
-.side-nav {
-  background-color: white;
-  z-index: -99;
+.button-collapse {
+  margin-left: 10px;
+}
+
+.side-nav li {
+  text-shadow: none;
+}
+
+#sidenav-overlay {
+  z-index: 0;
 }
 
 .header-container {
-  height: 520px;
+  height: 720px;
   top:0;
   left:0;
+}
+
+.main-logo {
+  background-color: white;
+  width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6rem;
 }
 
 .header-text {
@@ -235,6 +252,11 @@ footer .row {
     height: 350px;
   }
 
+  .main-logo {
+    width: 250px;
+    margin-top: 3.5rem;
+  }
+
   .header-text {
     line-height: 270px;
     font-size: 3.8rem;
@@ -261,6 +283,11 @@ footer .row {
 @media screen and (max-width: 600px) {
   .header-container {
     height: 250px;
+  }
+  
+  .main-logo {
+    width: 170px;
+    margin-top: 3rem;
   }
 
   .header-text {
