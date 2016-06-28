@@ -2,8 +2,7 @@
 <html>
 
 <!-- TODO:
-    
-    - Optimize header image
+    - h1 tagi logoon
     - Subpages
  -->
 
@@ -23,16 +22,23 @@
   <header>
     <nav>
       <div class="nav-wrapper">
-        <!-- <a href="index.html" class="brand-logo"><img src="img/Keys_logo_w_50x50.png"/></a> -->
+        <!-- <a href="index.html" class="brand-logo"><img src="img/logo/keys-logo-black-50.png"/></a> -->
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down navbar-links">
           <li><a href="index.html">Etusivu</a></li>
           <li><a href="avustustyo.html">Avustustyö</a></li>
+          <li><a href="tue.html">Tue työtä</a></li>
           <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+          <li>
+            <div class="flag-container">
+              <img src="img/logo/flag-eng.png" id="flag-english"/>
+            </div>
+          </li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <li><a href="index.html">Etusivu</a></li>
           <li><a href="avustustyo.html">Avustustyö</a></li>
+          <li><a href="tue.html">Tue työtä</a></li>
           <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
         </ul>
       </div>
@@ -47,7 +53,8 @@
       </div>
       <div class="row">
         <div class="col s12 center">
-          <img class="main-logo" src="img/keys-logo-black-500.png"/>
+          <!-- <h1>Keys of the Kingdom</h1> -->
+          <img class="main-logo unselectable" src="img/logo/keys-logo-black-500.png"/>
         </div>
       </div>
       <!-- <div class="header-text white-text">Keys of the Kingdom</div> -->
@@ -57,19 +64,19 @@
     <div class="grid-container unselectable hide-on-med-and-down">
       <div class="grid white-text">
         <div class="grid-item">
-            <img class="grid-inner grid-image" src="img/bg-1.jpg"/>
+            <img class="grid-inner grid-image" src="img/image-02.jpg"/>
         </div>
         <div class="grid-item">
-          <img class="grid-inner grid-image" src="img/bg-5.jpg"/>
+          <img class="grid-inner grid-image" src="img/image-09.jpg"/>
         </div>
         <div class="grid-item">
-          <img class="grid-inner grid-image" src="img/bg-3.jpg"/>
+          <img class="grid-inner grid-image" src="img/image-04.jpg"/>
         </div>
         <div class="grid-item">
-          <img class="grid-inner grid-image" src="img/bg-4.jpg"/>
+          <img class="grid-inner grid-image" src="img/image-01.jpg"/>
         </div>
         <div class="grid-item">
-          <img class="grid-inner grid-image" src="img/bg-6.jpg"/>
+          <img class="grid-inner grid-image" src="img/image-06.jpg"/>
         </div>
       </div>  
     </div>  
@@ -79,26 +86,43 @@
     <div class="container first-container">
       <div class="row">
         <div class="col s12">
-          <p class="flow-text center">Lorem ipsum dolor sit amet, quem choro cum ex nisl etiam.</p>
+          <p class="flow-text center translateable" id="etusivu_q_01">Suomenkielinen lainaus 01 tähän.</p>
         </div>
         <div class="col s12">
-          <p>Qui idque deserunt ut, has clita accusamus neglegentur in, verear conceptam id vel. Augue tempor conclusionemque pro ut. Vis semper ocurreret eu, cu soleat scripta accommodare nec. Rebum oporteat et sed, mea sapientem efficiendi ut.</p>
-          <p>Meliore appareat reformidans eu pri, pro te mollis constituam. Vim no eros omnium nominavi, per an voluptatum scribentur. Causae civibus iudicabit ex sea, quo cibo solet definitionem te. Ipsum latine ex pro. Te natum dolorem molestie qui.</p>
-          <p>Nibh tamquam cotidieque vim et. Veritus definiebas cu cum. Graecis appellantur in per. Quo posse latine te, quo te odio delicatissimi. Sonet nihil vim at, cu molestie maluisset honestatis sit, cu fabellas elaboraret mea. Ne ludus aeterno epicurei duo, utinam abhorreant eos ut.</p>
+          <p class="translateable" id="etusivu_p_01">Keys of the Kingdom yhdistyksen tarkoitus on herätellä tätä sukupolvea löytämään todellinen identiteettinsä Kristuksessa. Rohkaista ihmisiä käyttämään omia lahjojaan, unelmiaan, sekä konkreettisesti rakastaa ja auttaa ihmisiä. Yhdistys toimii Suomen lisäksi myös ulkomailla.</p>
+          <p class="translateable" id="etusivu_p_02">Vierailemme eri seurakunnissa, kouluissa, järjestöissä, tapahtumissa sekä järjestämme erilaisia tapahtumia eri yhteistyötahojen kanssa. Pyrimme tukemaan yhteyttä ihmisten ja seurakuntien välillä, sekä ohjaamaan nuoria löytämään elämälleen syvempi tarkoitus ja seurakuntayhteys.</p>
         </div>
       </div>
     </div>
 
     <div class="parallax-container parallax-break">
       <div class="parallax">
-        <img src="img/bg-3.jpg" class="parallax-image"/>
+        <img src="img/image-10.jpg" class="parallax-image"/>
       </div>
-      <div class="flow-text white-text">Duo munere inimicus iudicabit ad, sit no persius luptatum volutpat.</div>
+      <div class="flow-text white-text translateable" id="etusivu_q_02">Suomenkielinen lainaus 02 tähän.</div>
     </div>
 
 
   
   </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <footer class="page-footer white grey-text text-darken-4">
     <div class="container">
@@ -113,6 +137,7 @@
           <ul>
             <li><a href="index.html">Etusivu</a></li>
             <li><a href="avustustyo.html">Avustustyö</a></li>
+            <li><a href="tue.html">Tue työtä</a></li>
             <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
           </ul>
         </div>
@@ -122,13 +147,13 @@
     <div class="footer-copyright grey-text text-darken-3">
       <div class="container">
         <div class="col s12 m3 right icon-container">
-          <a href="http://www.facebook.com"><img src="img/logo-facebook.png" class="icon small-icon"/></a>
-          <a href="http://www.instagram.com"><img src="img/logo-instagram.png" class="icon small-icon"/></a>
-          <a href="http://www.twitter.com"><img src="img/logo-twitter.png" class="icon"/></a>
+          <a href="https://www.facebook.com/keysofthekingdomry"><img src="img/logo/logo-facebook.png" class="icon small-icon"/></a>
+          <a href="http://www.instagram.com"><img src="img/logo/logo-instagram.png" class="icon small-icon"/></a>
+          <a href="http://www.twitter.com"><img src="img/logo/logo-twitter.png" class="icon"/></a>
         </div>
 
         <div class="col s12 m9">
-          © 2016 Keys of the Kingdom
+          © 2016 Keys of the Kingdom ry.
           <span class="right semibold hide-on-small-only" style="margin-right: 10px;">Seuraa meitä!</span>
         </div>
       </div>
@@ -138,6 +163,7 @@
   <script src="js/jquery-1.12.4.min.js"></script>
   <script src="js/materialize.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/translation.js"></script>
 </body>
 
 </html>

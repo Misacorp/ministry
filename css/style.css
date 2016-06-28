@@ -24,12 +24,14 @@ nav {
   margin-right: 10px;
 }
 
-.brand-logo {
-  margin-left: 20px;
+.flag-container {
+  padding-top: 7px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .button-collapse {
-  margin-left: 10px;
+  margin-left: 6px;
 }
 
 .side-nav li {
@@ -44,6 +46,13 @@ nav {
   height: 720px;
   top:0;
   left:0;
+}
+
+.header-container h1 {
+  position: absolute;
+  top: 236px;
+  left: 38%;
+  font-size: 2.5rem;
 }
 
 .main-logo {
@@ -76,6 +85,7 @@ nav {
   height: 300px;
   line-height: 300px;
   font-style: italic;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
 }
 
 .centered {
@@ -119,6 +129,13 @@ footer .row {
     -webkit-user-select: none;
     -o-user-select: none;
     user-select: none;
+}
+
+.inline-image {
+  display: inline;
+  width: 20%;
+  max-width: 300px;
+  float: right;
 }
 
 
@@ -235,15 +252,23 @@ footer .row {
 
 
 
+@media screen and (max-width: 1300px) and (min-width: 993px) {
+  .header-container {
+    height: 550px;
+  }
 
+  .main-logo {
+    width: 300px;
+    margin-top: 4rem;
+  }
 
-
-
-
-
-
-
-
+  .grid {
+    top: -150px;                  /*    CHANGE WITH HEADER-CONTAINER HEIGHT: */
+    left: 25%;
+    right: 25%;
+    width: 50%;
+  }
+}
 
 
 
@@ -263,7 +288,7 @@ footer .row {
   }
 
   .first-container {
-    margin-top: 15%;
+    margin-top: 20px;
     margin-bottom: 30px;
   }
 
