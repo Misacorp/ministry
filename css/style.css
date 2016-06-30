@@ -303,6 +303,10 @@ footer .row {
     right: 20%;
     width: 60%;
   }
+
+  .flag-container {
+    margin-right: 20px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -328,6 +332,10 @@ footer .row {
   .parallax-break {
     height: 125px;
     line-height: 125px;
+  }
+
+  .flag-container {
+    margin-right: 10px;
   }
 }
 
