@@ -1,12 +1,12 @@
-var etusivu_q_01_eng = "Non profit organization- love, lead and lift people to live life fully the way God planned it. Our missions is to reach the nations- meet the ​​inviduals​​.";
-var etusivu_q_02_eng = "English quote 02 here.";
+var etusivu_q_01_eng = "Non profit organization- love, lead and lift people to live life fully the way God planned it.";
+var etusivu_q_02_eng = "Our mission is to reach the nations- meet inviduals.";
 
 var etusivu_p_01_eng = "English paragraph 01 here.";
 var etusivu_p_02_eng = "English paragraph 02 here.";
 
 
-var avustustyo_q_01_eng = "English quote 01 here.";
-var avustustyo_q_02_eng = "English quote 02 here.";
+var avustustyo_q_01_eng = "And now abide faith. hope. love, these three; but the greatest of these is LOVE ( 1. Kor.13:13)";
+var avustustyo_q_02_eng = "Therefore be imitators of God as dear children. And walk in love, as Christ also has loved us and given himself for us, an offering and a sacrifice to God for a sweet- smelling aroma Ef.5.1-2";
 
 var avustustyo_p_01_eng = "English avustustyö text here.";
 
