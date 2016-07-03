@@ -42,7 +42,7 @@ function swapFlag(toLanguage) {
 function translateTo(lang) {
 	var translateable = $(".translateable");
 	for(var i = 0; i < translateable.length; i++) {
-		$("#" + translateable[i].id).text(window[translateable[i].id + "_" + lang]);
+		$("#" + translateable[i].id).html("<p>" + window[translateable[i].id + "_" + lang] + "</p>");
 	}
 }
 
