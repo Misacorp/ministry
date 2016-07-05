@@ -10,6 +10,19 @@ var avustustyo_q_02_eng = "Therefore be imitators of God as dear children. And w
 
 var avustustyo_p_01_eng = "English avustustyö text here.";
 
+
+
+
+
+
+
+
+
+
+
+	// TRANSLATION ENGINE	
+
+
 var flag = "eng";
 
 $(document).ready(getFinnishTranslations());
@@ -42,7 +55,13 @@ function swapFlag(toLanguage) {
 function translateTo(lang) {
 	var translateable = $(".translateable");
 	for(var i = 0; i < translateable.length; i++) {
-		$("#" + translateable[i].id).html("<p>" + window[translateable[i].id + "_" + lang] + "</p>");
+		if(window[translateable[i].id + "_" + lang] === undefined) {
+			console.log("No (" + lang + ") translation found for (" + translateable[i].id + ")");
+			$("#" + translateable[i].id).html("");
+			}
+		else {
+			$("#" + translateable[i].id).html("<p>" + window[translateable[i].id + "_" + lang] + "</p>");
+		}
 	}
 }
 
