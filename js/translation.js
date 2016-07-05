@@ -89,9 +89,14 @@ function saveLanguage() {
 
 function loadLanguage() {
 	if(typeof(Storage) !== "undefined") {
-		if(localStorage.flag !== "undefined") {
+		if(typeof(localStorage.language) !== "undefined") {
+			console.log("Found a stored language: " + localStorage.language);
 			window["flag"] = localStorage.language;
 			changeLanguage();
+		}
+		else {
+			console.log("No stored language found");
+			window["flag"] = "eng";
 		}
 	}
 	else {
