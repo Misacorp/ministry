@@ -354,4 +354,8 @@ footer .row {
     margin-top: 100px;
     line-height: 1em;
   }
+
+  .page-footer i {
+    display: none;
+  }
 }
