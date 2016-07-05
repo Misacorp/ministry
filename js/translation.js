@@ -25,9 +25,17 @@ var avustustyo_p_01_eng = "English avustustyö text here.";
 
 var flag = "eng";
 
-$(document).ready(getFinnishTranslations());
+$(document).ready(function () {
+	getFinnishTranslations();
+	loadLanguage();
+	});
 
 $(".flag-container").on("click", function() {
+	changeLanguage();
+	saveLanguage();
+});
+
+function changeLanguage() {
 	if(flag == "eng") {
 		translateTo("eng");
 		swapFlag("fin");
@@ -36,7 +44,7 @@ $(".flag-container").on("click", function() {
 		translateTo("fin");
 		swapFlag("eng");
 	}
-});
+}
 
 function swapFlag(toLanguage) {
 	if (toLanguage == "fin") {
@@ -62,6 +70,30 @@ function translateTo(lang) {
 		else {
 			$("#" + translateable[i].id).html("<p>" + window[translateable[i].id + "_" + lang] + "</p>");
 		}
+	}
+}
+
+function saveLanguage() {
+	if(typeof(Storage) !== "undefined") {
+		if(flag == "eng") {
+			localStorage.setItem("language", "fin");
+		}
+		else if (flag == "fin") {
+			localStorage.setItem("language", "eng");
+		}
+	}
+	else {
+		console.log("Your browser does not support local storage.");
+	}
+}
+
+function loadLanguage() {
+	if(typeof(Storage) !== "undefined") {
+		window["flag"] = localStorage.language;
+		changeLanguage();
+	}
+	else {
+		console.log("Your browser does not support local storage.");
 	}
 }
 
