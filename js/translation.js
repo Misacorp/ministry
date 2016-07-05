@@ -89,8 +89,10 @@ function saveLanguage() {
 
 function loadLanguage() {
 	if(typeof(Storage) !== "undefined") {
-		window["flag"] = localStorage.language;
-		changeLanguage();
+		if(localStorage.flag !== "undefined") {
+			window["flag"] = localStorage.language;
+			changeLanguage();
+		}
 	}
 	else {
 		console.log("Your browser does not support local storage.");
