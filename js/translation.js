@@ -13,6 +13,16 @@ var avustustyo_p_02_eng = "Keys of the Kingdom also offers food and clothing aid
 
 
 
+var tue_q_01_eng = "Join us to rice up a fearless Kingdom generation - We are called to make a change.";
+var tue_q_02_eng = ".. See if I will not throw open the floodgates of heaven and pour out so much blessing that you will not have room enough for it (Mal.3:10)";
+
+var tue_p_01_eng = "We challenge you to partner with us, to support our work for reaching the nations with Gods love!";
+var tue_p_02_eng = "You can support us with single donations, becoming a long-term donor, or by purchasing our products.";
+var tue_p_03_eng = "Products to come.";
+var tue_p_04_eng = "We want to thank everyone for your support and prayers!";
+
+
+
 
 
 

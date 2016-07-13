@@ -5,7 +5,7 @@
 
  $(document).one("scroll", function() {
       $('#posti').text(rakennaPosti("kö","säh","i.com","post"));
-      $('#puhelin').text(rakennaPuh("67","3 45","50 12","+358 "));
+      $('#puhelin').text(rakennaPuh("34","1 05","44 50","+358 "));
     });
 
 var rakennaPosti = function(username2, username1, domain2, domain1) {
