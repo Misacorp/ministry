@@ -1,3 +1,7 @@
+.wf-loading {
+  display: none;
+}
+
 .hoverable {
   cursor: pointer;
 }
@@ -146,6 +150,10 @@ footer .row {
   width: 20%;
   max-width: 300px;
   float: right;
+}
+
+.fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe {
+    width: 100% !important;
 }
 
 
