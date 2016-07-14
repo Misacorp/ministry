@@ -4,8 +4,8 @@
     });
 
  $(document).one("scroll", function() {
-      $('#posti').text(rakennaPosti("kö","säh","i.com","post"));
-      $('#puhelin').text(rakennaPuh("34","1 05","44 50","+358 "));
+      $('.posti').text(rakennaPosti("kö","säh","i.com","post"));
+      $('.puhelin').text(rakennaPuh("34","1 05","44 50","+358 "));
     });
 
 var rakennaPosti = function(username2, username1, domain2, domain1) {
@@ -44,7 +44,7 @@ $(window).bind('resizeEnd', function() {
    $('#facebook-wrapper').fadeOut("slow", function() {
       $('#facebook-wrapper').load(url, { width: $('#facebook-feed').width() },
       function() {
-         FB.XFBML.parse(document.getElementById('facebook-wrapper'),
+         FB.XFBML.parse(document.getElementById("facebook-wrapper"),
          function() {
             $('#facebook-wrapper').fadeIn("slow");
          });
