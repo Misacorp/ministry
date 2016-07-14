@@ -152,6 +152,20 @@ footer .row {
   float: right;
 }
 
+.contacts-container {
+  width: 100%;
+  min-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.contacts-container span {
+  margin-left: 20px;
+  vertical-align: 0.5em;
+}
+
 .fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe {
     width: 100% !important;
 }
