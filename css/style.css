@@ -1,5 +1,5 @@
 .wf-loading {
-  display: none;
+  visibility: hidden;
 }
 
 .hoverable {

@@ -30,3 +30,24 @@ WebFontConfig = {
   wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
   s.parentNode.insertBefore(wf, s);
 })(document);
+
+
+// $(window).resize(function() {
+//    if(this.resizeTO) clearTimeout(this.resizeTO);
+//    this.resizeTO = setTimeout(function() {
+//       $(this).trigger('resizeEnd');
+//    }, 500);
+// });
+
+// $(window).bind('resizeEnd', function() {
+//    var url = $('#facebook-wrapper').data('refresh');
+//    $('#facebook-wrapper').fadeOut("slow", function() {
+//       $('#facebook-wrapper').load(url, { width: $('#facebook-feed').width() },
+//       function() {
+//          FB.XFBML.parse(document.getElementById('facebook-wrapper'),
+//          function() {
+//             $('#facebook-wrapper').fadeIn("slow");
+//          });
+//       })
+//    });
+// });
