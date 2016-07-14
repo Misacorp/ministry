@@ -369,6 +369,10 @@ footer .row {
   .flag-container {
     margin-right: 10px;
   }
+
+  .contacts-container {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 416px) {
