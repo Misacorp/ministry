@@ -1,3 +1,17 @@
+//		NAVIGATION TRANSLATIONS
+
+var etusivu_eng = "Front page";
+var avustustyo_eng = "Ministry";
+var tue_eng = "Support us";
+var yhteystiedot_eng = "Contact";
+
+
+
+//		CONTENT TRANSLATIONS
+
+var yhteystiedot_title_eng = "Contact"
+var linkit_title_eng = "Links";
+
 var etusivu_q_01_eng = "A nondenominational organization focused on evangelism, lifting up and supporting the local church.";
 var etusivu_q_02_eng = "Our mission is to reach the nations- meet inviduals.";
 
@@ -49,10 +63,12 @@ $(".flag-container").on("click", function() {
 function changeLanguage() {
 	if(flag == "eng") {
 		translateTo("eng");
+		translateNavigation("eng");
 		swapFlag("fin");
 	}
 	else if (flag == "fin") {
 		translateTo("fin");
+		translateNavigation("fin");
 		swapFlag("eng");
 	}
 }
@@ -79,7 +95,7 @@ function translateTo(lang) {
 			$("#" + translateable[i].id).html("");
 			}
 		else {
-			$("#" + translateable[i].id).html("<p>" + window[translateable[i].id + "_" + lang] + "</p>");
+			$("#" + translateable[i].id).text(window[translateable[i].id + "_" + lang]);
 		}
 	}
 }
@@ -120,4 +136,17 @@ function getFinnishTranslations() {
 	for(var i = 0; i < translateable.length; i++) {
 		window["" + translateable[i].id + "_fin"] = $("#" + translateable[i].id).text();
 		}
+
+	var nav_links = $(".nav-link");
+	for(var i = 0; i < nav_links.length; i++) {
+		console.log(nav_links[i].className.split(" ")[0] + "_fin --> " + nav_links[i].text);
+		window[nav_links[i].className.split(" ")[0] + "_fin"] = nav_links[i].text;
+	}
+}
+
+function translateNavigation(lang) {
+	$(".etusivu").text(window["" + "etusivu_" + lang]);
+	$(".avustustyo").text(window["" + "avustustyo_" + lang]);
+	$(".tue").text(window["" + "tue_" + lang]);
+	$(".yhteystiedot").text(window["" + "yhteystiedot_" + lang]);
 }
