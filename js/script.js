@@ -1,17 +1,21 @@
- $(document).ready(function(){
-      $('.parallax').parallax();
-      $(".button-collapse").sideNav();
-    });
+$(document).ready(function(){
+    $('.parallax').parallax();
+    $(".button-collapse").sideNav();
+  });
 
- $(document).one("scroll", function() {
-      $('.posti').text(rakennaPosti("kö","säh","i.com","post"));
-      $('.puhelin').text(rakennaPuh("34","1 05","44 50","+358 "));
-    });
+$(document).one("scroll", function() {
+  taytaKentat();
+  });
 
-  $(".contacts-container").one("click", function() {
-      $('.posti').text(rakennaPosti("kö","säh","i.com","post"));
-      $('.puhelin').text(rakennaPuh("34","1 05","44 50","+358 "));
-    });
+$(".contacts-container").one("click", function() {
+  taytaKentat();
+  });
+
+function taytaKentat() {
+  $('.posti').text(rakennaPosti("sa","ro","domministry.info","keysoftheking"));
+  $('.posti-2').text(rakennaPosti("i","sar","mministry.info","keysofthekingd"));
+  $('.puhelin').text(rakennaPuh("34","1 05","44 50","+358 "));
+}
 
 var rakennaPosti = function(username2, username1, domain2, domain1) {
   var posti = username1+username2+"@"+domain1+domain2;
